@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
-public class imc {
+public class Imc {
     public static void main(String[] args) {
+
         Scanner myobj = new Scanner(System.in);
         Float peso;
         Float altura;
@@ -9,13 +10,13 @@ public class imc {
         String imcr;
         
 
-        System.out.println("insira o seu nome:");
+        System.out.println( "insira o seu nome:");
         nome = myobj.nextLine();
 
-        System.out.println("insira o seu peso:");
+        System.out.println( "insira o seu peso:");
         peso = myobj.nextFloat();
 
-        System.out.println("insira a sua altura:");
+        System.out.println( "insira a sua altura:");
         altura = myobj.nextFloat();
 
         Float imc = peso/(altura * altura);
@@ -38,6 +39,7 @@ public class imc {
             imcr = "obesidade grau III";
         }
 
-        System.out.println(nome + "tem " +altura+ "m e pesa " + peso + "kg. Sua situação é: " + imcr);
+        System.out.println(nome + " tem " +altura+ "m e pesa " + peso + "kg. Sua situação é: " + imcr);
+        myobj.close();
     }
 }
